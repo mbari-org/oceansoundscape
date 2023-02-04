@@ -1,0 +1,40 @@
+site_name: OceanSoundscape
+site_description: Documentation for the oceansoundscape python package
+site_author: Danelle Cline
+repo_url: "https://github.com/mbari-org/oceansoundscape/"
+theme:
+  name: material
+  logo: https://docs.mbari.org/imgs/mbari-logo.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.force
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+markdown_extensions:
+  - meta
+  - admonition
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - toc:
+      permalink: True
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.details:
+  - pymdownx.superfences:
+nav:
+  - Change Log: CHANGELOG.md
+  - License: LICENSE.md
+
+
+copyright: Maintained by <a href="https://www.mbari.org/cline-danelle-e/">Danelle Cline</a>.
+
+plugins:
+  - search
