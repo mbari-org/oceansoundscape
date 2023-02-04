@@ -22,23 +22,3 @@ Author: Danelle Cline, [dcline@mbari.org](mailto:dcline@mbari.org)
 
 Full documentation is available at [https://docs.mbari.org/oceansoundscape/](https://docs.mbari.org/oceansoundscape/)
 
-## Upgrading to version 2.0
-
-If you are upgrading from a release prior to 2.0, the only change needed is to modify
-
-```
-from oceansoundscape.spectrogram import conf
-blue_a_conf =  conf.CONF_DICT['blueA']
-
-low_freq = blue_a_conf['low_freq']
-high_freq = blue_a_conf['high_freq']
-```
-
-to 
-
-```
-from oceansoundscape.spectrogram import conf
-blue_a_conf =  conf.CONF_DICT['blueA']['freq_range'][0]
-
-low_freq, high_freq = freq_range
-``` 

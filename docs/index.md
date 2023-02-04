@@ -33,4 +33,26 @@ Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/) i
 ```shell
 pip install -U oceansoundscape
 ```
- 
+
+## Breaking change
+
+The call dictionary was moved to a single field called freq_range.  
+
+To use this new structure, change
+
+```
+from oceansoundscape.spectrogram import conf
+blue_a_conf =  conf.CONF_DICT['blueA']
+
+low_freq = blue_a_conf['low_freq']
+high_freq = blue_a_conf['high_freq']
+```
+
+to 
+
+```
+from oceansoundscape.spectrogram import conf
+blue_a_conf =  conf.CONF_DICT['blueA']['freq_range'][0]
+
+low_freq, high_freq = freq_range
+``` 
