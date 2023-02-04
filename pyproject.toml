@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "oceansoundscape"
-version = "0.0.0"
+version = "0.1.0"
 description = "A python package for analyzing ocean acoustic data. "
 authors = ["danellecline <dcline@mbari.org>"]
 repository = "https://github.com/mbari-org/oceansoundscape"
