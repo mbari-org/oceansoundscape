@@ -2,6 +2,17 @@
 
 
 
+## v2.0.1 (2024-05-23)
+
+### Documentation
+
+* docs:  removed work not in development and old breaking changes ([`3d805fe`](https://github.com/mbari-org/oceansoundscape/commit/3d805fe82828849a5495afe80602ee1d073eb3ba))
+
+### Fix
+
+* fix: update copyright to 2024. Not a fix, but need to force update of dependencies for python 3.9,10,11 ([`366d9c1`](https://github.com/mbari-org/oceansoundscape/commit/366d9c17e5fa49275dfe819fe04a86cd04309b06))
+
+
 ## v2.0.0 (2024-05-23)
 
 ### Build
