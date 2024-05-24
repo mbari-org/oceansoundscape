@@ -31,6 +31,7 @@ jobs:
         pip install --upgrade pip && pip install python-semantic-release
         git config user.name github-actions
         git config user.email github-actions@github.com
+        git fetch --tags
         semantic-release publish
     - name: Publish to PyPI
       if: steps.semantic.outputs.new_release_published == 'true'
