@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 __author__ = 'Danelle Cline'
-__copyright__ = '2022'
+__copyright__ = '2024'
 __license__ = 'GPL v3'
 __contact__ = 'dcline at mbari.org'
 __doc__ = '''
