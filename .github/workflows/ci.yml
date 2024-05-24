@@ -2,6 +2,7 @@
 #  https://mestrak.com/blog/semantic-release-with-python-poetry-github-actions-20nn
 name: CI
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
