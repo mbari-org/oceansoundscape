@@ -21,7 +21,7 @@ jobs:
     - uses: Gr1N/setup-poetry@v8
     - run: poetry --version && poetry install
     - name: Install packages
-      run: sudo apt-get update -y && apt-get install -y libsndfile1
+      run: sudo apt-get update -y && sudo apt-get install -y libsndfile1
     - name: Run tests
       run: poetry run pytest
     - name: Configure PyPI token
