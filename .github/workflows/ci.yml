@@ -25,11 +25,15 @@ jobs:
       run: sudo apt-get update -y && sudo apt-get install -y libsndfile1
     - name: Run tests
       run: poetry run pytest
-    - name: Configure PyPI token
-      run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_TOKEN }}"
-    - name: Semantic Release and Publish to PyPI
+    - name: Semantic Release
+      id: semantic
       run: |
         pip install --upgrade pip && pip install python-semantic-release
         git config user.name github-actions
         git config user.email github-actions@github.com
-        semantic-release publish
+        semantic-release
+    - name: Publish to PyPI
+      if: steps.semantic.outputs.new_release_published == 'true'
+      run: |
+        poetry config pypi-token.pypi "${{ secrets.PYPI_API_TOKEN }}"
+        poetry publish --build
