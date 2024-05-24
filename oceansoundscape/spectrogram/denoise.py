@@ -22,7 +22,6 @@ from oceansoundscape.raven import BLEDParser
 from oceansoundscape.spectrogram import conf as global_conf
 from oceansoundscape.spectrogram import utils
 
-
 class PCENSmooth(object):
 
     def __init__(self, hdf_path: Path, bled: BLEDParser, conf: dict(), x: np.array([]), sample_rate: int):
