@@ -12,7 +12,7 @@ Author: Danelle Cline, [dcline@mbari.org](mailto:dcline@mbari.org)
 
 ## Prerequisites
  
-- Python 3.8 or 3.9
+- Python 3.9, 3.10, or 3.11
  
 ## Installation
 
