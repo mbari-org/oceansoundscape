@@ -48,6 +48,7 @@ class TestSpectrogram(unittest.TestCase):
                     print(ex)
                     continue
             self.assertEqual(num_processed, 3)
+            temp_path.rmdir()
         print('Done')
 
 if __name__ == '__main__':
