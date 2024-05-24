@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "oceansoundscape"
-version = "2.0.0"
+version = "2.0.1"
 description = "A python package for analyzing ocean acoustic data. "
 authors = ["Danelle Cline <dcline@mbari.org>"]
 repository = "https://github.com/mbari-org/oceansoundscape"
@@ -22,10 +22,11 @@ classifiers = [
 
 [tool.semantic_release]
 version_variable = [
-    "oceansoundscape/__init__.py:__version__",
-    "pyproject.toml:version"
+    "oceansoundscape/__init__.py:__version__"
 ]
-
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
 branch = "main"
 upload_to_pypi = false
 upload_to_release = true
